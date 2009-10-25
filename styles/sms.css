@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#message {
+	width:95%;
+	height:45px;
+	font-size: 0.9em;
+}
+
+li small {
+	font-size:0.6em;
+}
+
+.redButton {
+	margin-top: 100px;
+}
+
+#geolocationArea {
+	margin-top:25px;
+	margin-left:10px;
+}
+
+#geolocation {
+	float:left;
+}
+
+#geolocationLink {
+	float:left;
+	margin-left:20px;
+	margin-top:7px;
+	font-size:0.9em;
+}
+
+#delete {
+	clear:both;
+}
+
+#delete,
+#geolocation {
+	cursor:pointer;
+}
+
+.gps {
+	color:#0088CC;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html manifest="sms.manifest">
+<head>
+<title>iPhone SMS</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<link rel="apple-touch-icon" href="images/SMS-48x48.png" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<link href="javascript/iui/iui.css" rel="stylesheet" type="text/css"/>
+<link href="styles/sms.css" rel="stylesheet" type="text/css"/>
+<link REL="SHORTCUT ICON" HREF="favicon.ico">
+<script type="application/x-javascript" src="javascript/iui/iui.js"></script>
+
+<script type="text/javascript" src="javascript/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="javascript/db.js"></script>
+<script type="text/javascript" src="javascript/geolocation.js"></script>
+<script type="text/javascript" src="javascript/sms.js"></script>
+</head>
+
+<body>
+    <div class="toolbar">
+        <h1 id="pageTitle"></h1>
+        <!--a id="backButton" class="button" href="#"></a-->
+        <a id="save" class="button" href="#list" style="display:none;">List</a>
+        <a id="new" class="button" href="#compose" style="display:none;">New</a>
+    </div>
+    
+    <form id="compose" title="Compose" class="panel" selected="true">
+        <textarea name="message" id="message"></textarea>
+        <h2 id="charlimitinfo">1 SMS 160 characters left.</h2>
+        <div id="geolocationArea"><img id="geolocation" src="images/geolocation.png" width="31" height="30" alt="Geolocation" style="display:none"/> <span id="geolocationLink"></span></div>
+        <div id="delete" class="redButton" style="display:none">Delete</div>
+      <!--label>
+          <input type="button" name="selectAll" id="selectAll" value="Select All" />
+        </label-->    
+    </form>
+    
+    <ul class="test" id="list" title="List">
+        <li class="messageLink"><a href="#compose">An Error has Occurred</a></li>
+    </ul>    
+</body>
+</html>
